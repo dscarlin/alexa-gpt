@@ -1,0 +1,35 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "benji",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": ["cancel","off"]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": ["help","i don't understand"]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": ["stop", "end"]
+                },
+                {
+                    "name": "AskToGPTIntent",
+                    "slots": [{"name":"Question","type":"AMAZON.SearchQuery"}],
+                    "samples": [
+                        "Tell me {Question}",
+                        "Ask benji to tell me {Question}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": ["home","back"]
+                }
+            ],
+            "types": []
+        }
+    }
+  }
+  
